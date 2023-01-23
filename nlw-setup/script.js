@@ -9,14 +9,14 @@ function add() {
   const dayExists = nlwSetup.dayExists(today);
 
   if (dayExists) {
-    alert("Dia já encluso ");
+    alert(" O dia atual, já está cadastrado!!⛔️ ");
     return;
   }
   alert("Dia Adicionado com sucesso ✅️");
   nlwSetup.addDay(today);
 }
 
-function save() {
+function save() {alert("Dia Adicionado com sucesso ✅️");
   window.localStorage.setItem("NLWSetup@habits", JSON.stringify(nlwSetup.data));
 }
 
